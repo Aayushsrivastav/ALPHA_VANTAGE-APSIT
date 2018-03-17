@@ -49,7 +49,7 @@
   </ul>
   </div>
 </nav>
- <form  action="/action_page.php">
+ <form name="signup" action="php/signup.php" method="post">
 <div id="section11" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
   <h1>Personal Details</h1>
   <div class="form-group">
@@ -68,7 +68,8 @@
 	<label for="ssc">SSC %</label>
     <input type="number" class="form-control" id="SSC" name="SSC" placeholder="SSC %">&nbsp
 	<label for="sscsheet">SSC Marksheet</label>
-    <input type="file" accept="application/pdf" class="form-control" name="SSCfile" id="SSCfile">&nbsp
+    <input type="file" accept="application/pdf" class="form-control" name="file" id="file">&nbsp
+	  
 	<label for="hsc">HSC %</label>
     <input type="number" class="form-control" id="HSC" name="HSC" placeholder="HSC %">&nbsp
 	<label for="hscsheet">HSC Marksheet</label>
@@ -210,7 +211,7 @@
 <div id="section6" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
   <h1>Offer Letter</h1>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 	<button type="submit" class="btn btn-primary">Reset</button>
 </div>
 </form>
