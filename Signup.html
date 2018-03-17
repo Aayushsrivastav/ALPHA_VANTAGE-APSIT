@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+<a class="navbar-brand" href="#">
+    <img src="LOGO.png" alt="Logo" style="width:40px;">
+  </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav collapse navbar-collapse">
+	<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Profile
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section11">Personal Details</a>
+        <a class="dropdown-item" href="#section12">Identification</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Education Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Future Plans</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="#section5">Certifications</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="#section6">Offer Letter</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+ <form  action="/action_page.php">
+<div id="section11" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+  <h1>Personal Details</h1>
+  <div class="form-group">
+	<label for="MoodleID">Moodle ID:</label>
+    <input type="number" class="form-control" name="MoodleID" id="MoodleID" placeholder="MoodleID">&nbsp
+    <label for="Password">Password</label>
+    <input type="password" class="form-control" name="pwd" name="pwd" placeholder="Password">&nbsp
+	<label for="name">Name:</label>
+    <input type="text" class="form-control" id="Name" name="Name" placeholder="Name">&nbsp
+    <label for="date">DOB:</label>
+    <input type="date" class="form-control" id="DOB" name="DOB" placeholder="Date of Birth">&nbsp
+	<label for="MobileNo">MobileNo</label>
+    <input type="number" class="form-control" id="MobileNo" name="MobileNo" placeholder="MobileNo">&nbsp
+	<label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email@abcc.com">&nbsp
+	<label for="ssc">SSC %</label>
+    <input type="number" class="form-control" id="SSC" name="SSC" placeholder="SSC %">&nbsp
+	<label for="sscsheet">SSC Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" name="SSCfile" id="SSCfile">&nbsp
+	<label for="hsc">HSC %</label>
+    <input type="number" class="form-control" id="HSC" name="HSC" placeholder="HSC %">&nbsp
+	<label for="hscsheet">HSC Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="HSCfile" name="HSCfile">&nbsp
+	<label for="diploma">Diploma Marks</label>
+    <input type="number" class="form-control" id="diploma" name="diploma" placeholder="Diploma Makrs">&nbsp
+	<label for="diplomasheet">Diploma Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="Diplomafile" name="Diplomafile">&nbsp
+	<label for="livekt">Live KT</label>
+    <input type="number" min="1" max="9" class="form-control" id="Livekt" name="Livekt">&nbsp
+	<label for="deadkt">Dead KT</label>
+    <input type="number" min="1" max="9" class="form-control" id="Deadkt" name="Deadkt">&nbsp
+	<label for="sem1">SEM1 CGPA</label>
+    <input type="number" class="form-control" id="sem1" name="sem1" placeholder="SEM1 CGPA">&nbsp
+	<label for="sem1sheet">Sem1 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM1file" name="SEM1file">&nbsp
+	<label for="sem2">SEM2 CGPA</label>
+    <input type="number" class="form-control" id="sem2" name="sem2" placeholder="SEM2 CGPA">&nbsp
+	<label for="sem2sheet">Sem2 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM2file" name="SEM2file">&nbsp
+	<label for="sem3">SEM3 CGPA</label>
+    <input type="number" class="form-control" id="sem3" name="sem3" placeholder="SEM3 CGPA">&nbsp
+	<label for="sem3sheet">Sem3 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM3file" name="SEM3file">&nbsp
+	<label for="sem4">SEM4 CGPA</label>
+    <input type="number" class="form-control" id="sem4" name="sem4" placeholder="SEM4 CGPA">&nbsp
+	<label for="sem4sheet">Sem4 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM4file" name="SEM4file">&nbsp
+	<label for="sem5">SEM5 CGPA</label>
+    <input type="number" class="form-control" id="sem5" name="sem5" placeholder="SEM5 CGPA">&nbsp
+	<label for="sem5sheet">Sem5 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM5file" >&nbsp
+	<label for="sem6">SEM6 CGPA</label>
+    <input type="number" class="form-control" id="sem6" name="sem6" placeholder="SEM6 CGPA">&nbsp
+	<label for="sem6sheet">Sem6 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM6file" name="SEM6file">&nbsp
+	<label for="sem7">SEM7 CGPA</label>
+    <input type="number" class="form-control" id="sem7" name="sem7" placeholder="SEM7 CGPA">&nbsp
+	<label for="sem7sheet">Sem7 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM7file" name="SEM7file">&nbsp
+	<label for="sem8">SEM8 CGPA</label>
+    <input type="number" class="form-control" id="sem8" name="sem8" placeholder="SEM8 CGPA">&nbsp
+	<label for="sem8sheet">Sem8 Marksheet</label>
+    <input type="file" accept="application/pdf" class="form-control" id="SEM1file" name="SEM1file">&nbsp
+	<label for="photo">Passport size Photo</label>
+    <input type="file" accept="application/image" class="form-control" id="PassPhoto" name="PassPhoto">&nbsp
+	<label for="Adhar">Adhar card copy</label>
+    <input type="file" accept="application/image" class="form-control" id="Adhar" name="Adhar">&nbsp
+	<label for="resume">Upload your own Resume</label>
+    <input type="file" accept="application/pdf" class="form-control" id="Resume" name="Resume">&nbsp
+	<label for="Reume1">Build your Resume</label>&nbsp
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="Name" placeholder="Name" name="Name">&nbsp
+	<label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email@abcc.com">&nbsp
+	<label for="MobileNo">MobileNo</label>
+    <input type="number" class="form-control" id="MobileNo" name="MobileNo" placeholder="MobileNo">&nbsp
+	<label for="carobj">Carrier Objective</label>
+	<textarea class="form-control" rows="5" id="carrobj" name="carrobj"></textarea>
+	<label for="edqua">Education Qualifications</label>
+	<textarea class="form-control" rows="5" id="edqua" name="edqua"></textarea>
+	<label for="skills">Technical Skills</label>
+	<textarea class="form-control" rows="5" id="skills" name="skills" placeholder="Languages: Matlab"></textarea>
+	<label for="exp">Experience & Academic Project</label>
+	<textarea class="form-control" rows="5" id="exp" name="exp" placeholder="Experience:"></textarea>
+	<label for="certify">Certification Courses</label>
+	 <input type="text" class="form-control" id="certifytitle" name="certifytitle" placeholder="Certificate Name">&nbsp
+	<input type="file" accept="application/pdf" class="form-control" id="certify11" name="certify11">&nbsp
+	<label for="activity">Extra Carricular Activities</label>
+	<textarea class="form-control" rows="5" id="activity" name="activity"></textarea>
+	<label for="personal">Personal Details</label>
+	<textarea class="form-control" rows="5" id="personal" name="personal"></textarea>
+	<label for="declare">Declaration</label>
+	<textarea class="form-control" rows="5" id="declare" name="declare"></textarea>
+	<label for="certify">Certification Courses</label>
+	 <input type="text" class="form-control" id="certifytitle" name="certifytitle" placeholder="Certificate Name">&nbsp
+	<input type="file" accept="application/pdf" class="form-control" id="certify11">&nbsp
+	<label for="letter">Offset Letter</label>
+	<input type="file" accept="application/pdf" class="form-control" id="letter" name="letter">&nbsp
+  </div>
+  
+
+</div>
+<!--<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+ 
+  <div class="form-inline" class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</div>
+</div>-->
+<div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1>Education Details</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+  <h1>Future Plans</h1>
+  <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="">Placements
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="">Higher Education
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="">Foreign Education
+      </label>
+    </div>
+	<div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="">Entrepreneurship
+      </label>
+    </div>
+</div>
+<div id="section12" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1>Identification details</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section5" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+  <h1>Certifications</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section6" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+  <h1>Offer Letter</h1>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+	<button type="submit" class="btn btn-primary">Reset</button>
+</div>
+</form>
+</body>
+</html>
