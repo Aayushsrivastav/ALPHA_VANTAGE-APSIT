@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+ .transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+}
+
+input::-webkit-input-placeholder {
+color: #E57C29 !important;
+}
+
+textarea::placeholder {
+color: #E57C29 !important;
+}
+
+input, select, textarea{
+    color: #E57C29 !important;
+}
+
+textarea:focus, input:focus {
+    color: #ff0000;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+	background-attachment: fixed;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+	height: auto;
+	background-size: cover;
+	filter: grayscale(100%);
+}
+  </style>
+</head>
+<body>
+
+<div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video"> 
+        <source src="vb.mp4"    type="video/mp4">
+
+    </video>
+</div>
+<form  action="sign.php" method="post">
+<div id="section11" style="padding-top:70px;padding-bottom:70px">
+  <h1 style="color: #E57C29;text-align:center">Personal Details</h1>
+  <div class="form-group">
+   
+    <input type="password" class="form-control transparent-input"  name="pwd" id="pwd" placeholder="Password">&nbsp
+    <input type="text" class="form-control transparent-input" name="Name" id="Name" placeholder="Name">&nbsp
+    <input type="number" class="form-control transparent-input" name="MobileNo" id="MobileNo" placeholder="MobileNo">&nbsp
+    <input type="email" class="form-control transparent-input" name="Email" id="Email" placeholder="Email@abcc.com">&nbsp
+   </div>
+   <button type="submit" class="btn btn-primary ml-2">Submit</button>
+    <button type="submit" class="btn btn-primary ml-2">Reset</button></div>
+	</form>
+
+</body>
+</html>

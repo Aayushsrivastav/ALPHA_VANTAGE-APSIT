@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+ .transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+}
+
+input::-webkit-input-placeholder {
+color: #E57C29 !important;
+}
+
+textarea::placeholder {
+color: #E57C29 !important;
+}
+
+input, select, textarea{
+    color: #E57C29 !important;
+}
+
+textarea:focus, input:focus {
+    color: #ff0000;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+	background-attachment: fixed;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+	height: auto;
+	background-size: cover;
+	filter: grayscale(100%);
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+<a class="navbar-brand" href="#">
+    <img src="LOGO.png" alt="Logo" style="width:40px;">
+  </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav collapse navbar-collapse">
+	<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Profile
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section11">Personal Details</a>
+        <a class="dropdown-item" href="#section12">Identification</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Education Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Future Plans</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="#section5">Certifications</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="#section6">Offer Letter</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+<div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video"> 
+        <source src="vb.mp4"    type="video/mp4">
+
+    </video>
+</div>
+ <form  action="/action_page.php">
+<div id="section11" style="padding-top:70px;padding-bottom:70px">
+  <h1 style="color: #E57C29;text-align:center">Personal Details</h1>
+  <div class="form-group">
+    <input type="number" class="form-control transparent-input" id="MoodleID" placeholder="MoodleID">&nbsp
+    <input type="password" class="form-control transparent-input"  id="pwd" placeholder="Password">&nbsp
+    <input type="text" class="form-control transparent-input" id="Name" placeholder="Name">&nbsp
+    <input type="date" class="form-control transparent-input" id="DOB" placeholder="Date of Birth">&nbsp
+    <input type="number" class="form-control transparent-input" id="MobileNo" placeholder="MobileNo">&nbsp
+    <input type="email" class="form-control transparent-input" id="email" placeholder="Email@abcc.com">&nbsp
+	<h1 style="color: #E57C29;text-align:center">Education Details</h1>
+    <input type="number" class="form-control transparent-input" id="SSC" placeholder="SSC %">&nbsp
+	<a href="#" data-toggle="tooltip" title="Upload SSC Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SSCfile"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="HSC" placeholder="HSC %">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload HSC Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="HSCfile"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="diploma" placeholder="Diploma Marks">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload Diploma Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="Diplomafile"></a>&nbsp
+    <input type="number" min="1" max="9" class="form-control transparent-input" id="Livekt" placeholder="Live KT">&nbsp
+    <input type="number" min="1" max="9" class="form-control transparent-input" id="Deadkt" placeholder="Dead KT">&nbsp
+    <input type="number" class="form-control transparent-input" id="sem1" placeholder="SEM1 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM1 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM1file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem2" placeholder="SEM2 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM2 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM2file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem3" placeholder="SEM3 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM3 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM3file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem4" placeholder="SEM4 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM4 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM4file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem5" placeholder="SEM5 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM5 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM5file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem6" placeholder="SEM6 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM6 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM6file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem7" placeholder="SEM7 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM7 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM7file"></a>&nbsp
+    <input type="number" class="form-control transparent-input" id="sem8" placeholder="SEM8 CGPA">&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload SEM8 Marksheet"><input type="file" accept="application/pdf" class="form-control transparent-input" id="SEM1file"></a>&nbsp
+	<h1 style="color: #E57C29;text-align:center">Identification Details</h1>
+    <a href="#" data-toggle="tooltip" title="Upload Passport size Photo"><input type="file" accept="application/image" class="form-control transparent-input" id="PassPhoto"></a>&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload Addhar Card Copy"><input type="file" accept="application/image" class="form-control transparent-input" id="Adhar"></a>&nbsp
+    <a href="#" data-toggle="tooltip" title="Upload your Resume"><input type="file" accept="application/pdf" class="form-control transparent-input" id="Resume"></a>&nbsp
+	<label for="Reume1">Build your Resume</label>&nbsp
+    <label for="name">Name:</label>
+    <input type="text" class="form-control transparent-input" id="Name" placeholder="Name">&nbsp
+	<label for="email">Email</label>
+    <input type="email" class="form-control transparent-input" id="email" placeholder="Email@abcc.com">&nbsp
+	<label for="MobileNo">MobileNo</label>
+    <input type="number" class="form-control transparent-input" id="MobileNo" placeholder="MobileNo">&nbsp
+	<label for="carobj">Carrier Objective</label>
+	<textarea class="form-control transparent-input" rows="5" id="carrobj" placeholder="Carrier Objective"></textarea>
+	<label for="edqua">Education Qualifications</label>
+	<textarea class="form-control transparent-input" rows="5" id="edqua" placeholder="Education Qualifications"></textarea>
+	<label for="skills">Technical Skills</label>
+	<textarea class="form-control transparent-input" rows="5" id="skills" placeholder="Languages: Matlab"></textarea>
+	<label for="exp">Experience & Academic Project</label>
+	<textarea class="form-control transparent-input" rows="5" id="exp" placeholder="Experience & Academic Projects"></textarea>
+	<label for="certify">Certification Courses</label>
+	 <input type="text" class="form-control transparent-input" id="certifytitle" placeholder="Certificate Name">&nbsp
+	<input type="file" accept="application/pdf" class="form-control transparent-input" id="certify11">&nbsp
+	<label for="activity">Extra Carricular Activities</label>
+	<textarea class="form-control transparent-input" rows="5" id="activity" placeholder="Extra Carricular Activities"></textarea>
+	<label for="personal">Personal Details</label>
+	<textarea class="form-control transparent-input" rows="5" id="personal" placeholder="Personal Details"></textarea>
+	<label for="declare">Declaration</label>
+	<textarea class="form-control transparent-input" rows="5" id="declare" placeholder="Declaration"></textarea>
+	<label for="certify">Certification Courses</label>
+	 <input type="text" class="form-control transparent-input" id="certifytitle" placeholder="Certificate Name">&nbsp
+	<input type="file" accept="application/pdf" class="form-control transparent-input" id="certify11">&nbsp
+	<label for="letter">Offset Letter</label>
+	<input type="file" accept="application/pdf" class="form-control transparent-input" id="letter">&nbsp
+  </div>
+  
+
+</div>
+
+</body>
+</html>

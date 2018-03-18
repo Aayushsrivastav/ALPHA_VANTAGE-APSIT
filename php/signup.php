@@ -20,10 +20,10 @@ $name = $_POST['Name'];
 $dob = $_POST['DOB'];
 $mobno = $_POST['MobileNo'];
 $email = $_POST['email'];
-$ssc = $_POST['ssc'];
+$ssc = $_POST['SSC'];
 $sscfil = $_POST['file'];
 echo $sscfil;
-$hsc = $_POST['hsc'];
+$hsc = $_POST['HSC'];
 $hscfile = $_POST['HSCfile'];
 $diploma = $_POST['diploma'];
 $diplomafile = $_POST['Diplomafile'];
@@ -35,16 +35,16 @@ $sem2 = $_POST['sem2'];
 $sem2file = $_POST['SEM2file'];
 $sem3 = $_POST['sem3'];
 $sem3file = $_POST['SEM3file'];
-$ssc = $_POST['sem4'];
+$sem4 = $_POST['sem4'];
 $sem4file = $_POST['SEM4file'];
-$ssc = $_POST['sem5'];
-$sem5file = $_POST['SEM5file'];
-$ssc = $_POST['sem6'];
+$sem5 = $_POST['sem5'];
+$sem5file = $_POST['SEM5fil'];
+$sem6 = $_POST['sem6'];
 $sem6file = $_POST['SEM6file'];
-$ssc = $_POST['sem7'];
+$sem7 = $_POST['sem7'];
 $sem7file = $_POST['SEM7file'];
-$ssc = $_POST['sem8'];
-$sem8file = $_POST['SEM8file'];
+$sem8 = $_POST['sem8'];
+$sem8file = $_POST['SEM8fil'];
 $photo = $_POST['PassPhoto'];
 $adhar = $_POST['Adhar'];
 $carobj = $_POST['carrobj'];
@@ -90,12 +90,11 @@ $letter = $_POST['letter'];
 	
 	
 	
-	$sql = "INSERT into user(moodleid,pass,name,dob,mobno,email,ssc,sscfile,hsc,hscfile,diploma,diplomafile,livekt,deadkt,sem1,sem1file,sem2,sem2file,sem3,sem3file,sem4,sem4file,sem5,sem5file,sem6,sem6file,sem7,sem7file,sem8,sem8file,photo,adhar,carobj,edqua
-	skills,exp,activity,personal,declare,letter)VALUES($moodleid,'$pass','$name','$dob','$mobno','$email','$ssc','$sscfil','$hsc','$hscfile','$diploma','$diplomafile','$livekt','$')";
+	$sql = "INSERT into user(moodleid,pass,name,dob,mobno,email,ssc,sscfile,hsc,hscfile,diploma,diplomafile,sem1,sem1file,sem2,sem2file,sem3,sem3file,sem4,sem4file,sem5,sem5file,sem6,sem6file,sem7,sem7file,sem8,sem8file,livekt,deadkt,photo,adharcard)VALUES($moodleid,'$pass','$name','$dob','$mobno','$email','$ssc','$sscfil','$hsc','$hscfile','$diploma','$diplomafile','$sem1','$sem1file','$sem2','$sem2file','$sem3','$sem3file','$sem4','$sem4file','$sem5','$sem5file','$sem6','$sem6file','$sem7','$sem7file','$sem8','$sem8file',$livekt,$deadkt,'$photo','$adhar')";
 $result = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 	if($result){
-		echo "succes";
+		echo "<script type='text/javascript'>window.location='http://localhost/hac_apsit/Index.html';</script>";
 	}else{
-		echo "fail";
+		echo "<script type='text/javascript'>window.alert('Unable to register');</script>";
 	}
 ?>
